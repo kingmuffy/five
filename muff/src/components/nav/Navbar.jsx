@@ -27,7 +27,7 @@ const Navbar = () => {
           <span>Explore</span>
           <span>English</span>
           <span>sign in</span>
-          <span>become a seller</span>
+          {!currentUser?.isSeller && <span>become a seller</span>}
           <button>join</button>
         </div>
       </div>
